@@ -8,7 +8,7 @@ router.get('/', async function(req, res, next) {
     data = await users.getMultipleUsers(req.query.page);
     var userData = data.users
     console.log(userData)
-    res.render('userlist', {userList: userData});
+    res.render('userList', {userList: userData});
   } catch (err) {
     console.error(`Error getting users `, err.message);
     next(err);

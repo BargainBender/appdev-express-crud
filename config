@@ -3,7 +3,8 @@ const config = {
     /* don't expose password or any sensitive info, done only for demo */
     host: "localhost",
     user: "root",
-    database: "express_demo",
+    password: "secretpassword",
+    database: "dummydb",
     connectTimeout: 60000
   },
   listPerPage: 10,

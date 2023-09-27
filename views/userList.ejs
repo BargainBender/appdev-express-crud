@@ -1,0 +1,54 @@
+<%- include("layouts/header.ejs") -%>
+
+<div class="container mx-auto">
+  <table class="table">
+    <!-- head -->
+    <thead>
+      <tr>
+        <th>id</th>
+        <th>Name</th>
+        <th>Email</th>
+        <th></th>
+      </tr>
+    </thead>
+    <tbody>
+      <!-- row 1 -->
+      <tr>
+        <th>1</th>
+        <td>Cy Ganderton</td>
+        <td>Quality Control Specialist</td>
+        <td>Blue</td>
+      </tr>
+      <!-- row 2 -->
+      <tr class="hover">
+        <th>2</th>
+        <td>Hart Hagerty</td>
+        <td>Desktop Support Technician</td>
+        <td>Purple</td>
+      </tr>
+      <!-- row 3 -->
+      <tr>
+        <th>3</th>
+        <td>Brice Swyre</td>
+        <td>Tax Accountant</td>
+        <td>Red</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<!-- <h1>Layout</h1>
+    <%= userList.length  %>
+    <a href="/insertuser"> Create User</a> 
+
+    
+    <ul>
+        <% userList.forEach((user) => { %>
+          <li>Email: <%= user.email %></li>
+          <li>Firstname: <%= user.firstname %></li>
+          <li>Lastname: <%= user.lastname %></li>
+          
+          <li><td><a href="/edituser/<%=user.id%>" class="edit-link" >Edit</a></td></li> <li><td><a href="/deleteuser/<%=user.id%>" class="edit-link" >Delete</a></td></li>
+        <% }) %>
+      </ul> -->
+
+<%- include("layouts/footer.ejs") -%>
